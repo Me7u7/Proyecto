@@ -1,0 +1,383 @@
+        html, body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    font-size: 100%;
+    list-style: none;
+    font-family: 'Montserrat', sans-serif !important;
+    font-weight: 100;
+    min-height: 100%;
+    -moz-transform: scale(1, 1);
+    zoom: 1;
+    zoom: 100%;
+}
+.header {
+    width: 100%;
+    height: 100px;
+    z-index: 3;
+    position: absolute;
+    left: 0;
+    top: 0;
+    transition: all 0.3s ease-in-out;
+    background-color: rgba(0, 0, 0, 0);
+    overflow: hidden;
+    line-height: 100px;
+}
+.header:hover{
+    background-color: black;
+}
+.headWrap {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 10%;
+}
+.hLeft {
+    flex: 20%;
+    height: 100px;
+}
+.hLeft > a {
+    display: inline-block;
+    overflow: hidden;
+    margin-top: 31px;
+}
+.hLeft img {
+    height: 38px;
+}
+.hRight {
+    flex: 80%;
+    height: 100px;
+}
+.hRight> div {
+    display: inline-block;
+    overflow: hidden;
+    float: right;
+    color: white;
+}
+.hBtn {
+    margin-right: 25px;
+}
+.hBtn span {
+    transition: all 0.3s ease-in-out;
+    color: white;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.hBtn span:hover{
+    color:orange;
+    text-decoration: underline;
+}
+
+.hBtn img {
+    display: inline-block;
+    height: 16px;
+    position: relative;
+    top: 3px;
+    filter: invert(1);
+}
+.hScrch img {
+    height: 20px;
+    margin-top: 39px;
+    filter: invert(1);
+    cursor: pointer;
+}
+.bodyWrap {
+    width: 100%;
+    min-height: 100vh;
+    overflow: hidden;
+    margin-top: 0px;
+    text-rendering: optimizeLegibility;
+    z-index: 1;
+}
+.mainHeroContainer, .secondContainer {
+    display: block;
+    overflow: hidden;
+    height: 100vh;
+    text-align: left;
+}
+.mainHeroContainer video {
+    min-height: 100%;
+}
+.mainHeroContent {
+    position: absolute;
+    bottom: auto;
+    top: 50%;
+    width: 600px;
+    transform: translateY(-50%);
+    margin-left: 10%;
+    color: white;
+}
+.mainHeroContentWrap span {
+    display: block;
+    font-size: 50px;
+    letter-spacing: 1px;
+}
+.bottomArrow {
+    position: absolute;
+    bottom: auto;
+    top: 95%;
+    width: 100%;
+    transform: translateY(-50%);
+    text-align: center;
+}
+.bottomArrow img {
+    filter: invert(1);
+    height: 30px;
+    cursor: pointer;
+}
+.secondWrap {
+    display: flex
+;
+    flex-wrap: wrap;
+}
+.secondLeft {
+    flex: 60%;
+    overflow: hidden;
+}
+.secondLeft img {
+    height: 100%;
+}
+.secondRight {
+    flex: 40%;
+    height: 100%;
+    align-items: center;
+    align-self: center;
+}
+.secondRight div {
+    display: block;
+    margin-right: 20%;
+    margin-left: 15px;
+}
+.secondRight h3, .thirdWrap h3 {
+    font-size: 42px;
+    font-weight: 100;
+    margin: 0;
+}
+.secondRight h3 span {
+    color: #cf4500;
+}
+.secondRight p {
+    font-size: 18px;
+    margin-bottom: 15px;
+}
+.secondRight > div > span {
+    border: 1px solid;
+    display: inline-block;
+    color: #cf4500;
+    padding: 12px;
+    border-radius: 50px;
+    font-weight: 500;
+    font-size: 14px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;  
+}
+.secondRight > div > span:hover {
+    color: #973402;
+    border: 2px solid;
+    box-shadow: -1px 5px 2px 1px #ccc;
+}
+.thirdContainer {
+    display: flex;
+    flex-wrap: wrap;
+    overflow: hidden;
+    height: 80vh;
+    text-align: left;
+    width: 100%;
+    background-image: url(https://www.mastercard.com/content/dam/public/mastercardcom/na/global-site/home/mastercard-cards-1300x650.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.thirdWrap {
+    flex: 60%;
+    color: white;
+    height: 100%;
+    align-items: center;
+    align-self: center;
+    align-content: center;
+    max-width: 500px;
+    margin-left: 15px;
+}
+.thirdWrap span {
+    border: 1px solid;
+    display: inline-block;
+    color: white;
+    padding: 12px;
+    border-radius: 50px;
+    font-weight: 500;
+    font-size: 14px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;  
+    margin-top: 20px;
+}
+.thirdWrap span:hover {
+    box-shadow: 0px 1px 2px 2px #ccc;
+}
+.fourthContainer {
+    background-color: #323231;
+    color: white;
+    width: 100%;
+    height: 50vh;
+}
+.fourthWrap {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 10%;
+    align-items: center;
+    align-content: center;
+    align-self: center;
+    height: 100%;
+}
+.fourthWrap > div {
+    flex: 50%;
+}
+.fourthLeft {
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+span.fourthTitle {
+    font-size: 12px;
+}
+.fourthLeft p {
+    font-size: 16px;
+    margin-right: 5%;
+}
+.fourthRight img {
+    width: 100%;
+}
+span.fourthButton {
+    cursor: pointer;
+    color:#b0adad;
+}
+span.fourthButton:hover {
+color: orange;
+text-decoration: underline;
+}
+.fifthContainer {
+    display: block;
+    overflow: hidden;
+    width: 100%;
+    padding: 8% 10%;
+}
+.fifthWrap {
+    align-content: space-around;
+    justify-content: center;
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 20px;
+    width: 80%;
+}
+.fifthContainer h3 {
+    font-size: 30px;
+    letter-spacing: 1px;
+}
+.fifthWrap > div > img {
+    width: 100%;
+    height: 140px;
+}
+span.fifthSub {
+    font-size: 14px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    display: block;
+    margin-top: 25px;
+}
+.fifthWrap > div > p {
+    font-size: 28px;
+    font-weight: 100;
+}
+span.fifthlink {
+    font-weight: bold;
+    color: #757575;
+    cursor: pointer;
+}
+span.fifthlink:hover {
+color: orange;
+text-decoration: underline;
+}
+.footerTop {
+    background-color: #323231;
+    color: white;
+    width: 100%;
+    height: 60px;
+    line-height: 60px;
+    padding-left: 10%;
+}
+.footer {
+    width: 100%;
+    transition: all 0.3s ease-in-out;
+    background-color: black;
+    overflow: hidden;
+    color: white;
+}
+.footerTopWrap {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 10%;
+    margin-top: 10%;
+}
+.footerTopWrap > div { /*Registra ambos*/
+    flex: 50%;
+}
+.fleft > a > img {
+    height: 40px;
+}
+.fleft h3 {
+    font-size: 25px;
+    font-weight: 100;
+    letter-spacing: 1px;
+    max-width: 300px;
+}
+.fleft > span {
+    color: rgb(177, 173, 166);
+    font-size: 17px;
+    font-weight: bold;
+    cursor: pointer;
+}
+.fleft > span:hover {
+text-decoration: underline;
+}
+.fRight > div {
+    width: 50%;
+    display: inline-block;
+    float: left;
+}
+.fRight > div > h5 {
+    font-size: 16px;
+    letter-spacing: 1px;
+}
+.fRight > div > a {
+    color: white;
+    text-decoration: none;
+    margin-top: 15px;
+    display: inline-block;
+}
+.footer hr {
+    width: 80%;
+    background-color: grey;
+    margin-top: 25px;
+}
+.footerBottomWrap {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 10%;
+    padding: 25px 0;
+}
+.footerBottomWrap > div {
+    flex: 50%;
+}
+@media only screen and (max-width: 955px) {
+    .secondLeft, .secondRight {
+        flex: 100%;
+    }
+    .secondLeft img {
+    width: 100%;
+    height: auto;
+}
+.secondRight {
+    margin: 45px 15px;
+}
+.secondContainer {
+    height: auto !important;
+}
+}
